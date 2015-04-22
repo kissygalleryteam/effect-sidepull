@@ -1,0 +1,1 @@
+KISSY.config("requires",{"kg/effect-sidepull/1.0.1/index":["node","base","event","./index.css"],"kg/effect-sidepull/1.0.1/lib/main":["node","base"]});

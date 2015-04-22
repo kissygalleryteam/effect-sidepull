@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>EffectSidepull的demo</title>
+    <script src="//g.alicdn.com/kissy/k/1.4.8/seed-min.js" charset="utf-8"></script>
+    <style type="text/css">
+        body {
+            font-family: verdana,"Microsoft YaHei";
+        }
+        .J_KG_Item_Head{
+            display: inline-block;
+            width: 180px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            border: 2px #333 solid;
+            color: #333;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            z-index: 1001;
+        }
+        .J_KG_Item_List{
+            margin-top: 100px;
+        }
+        .J_KG_Item_List li{
+            position: relative;
+        }
+        .J_KG_Item_Content{
+            position: absolute;
+            top: -92px;
+            left: 182px;
+            display: inline-block;
+            width: 0px;
+            height: 230px;
+            text-align: center;
+
+            font-size: 18px;
+            color: #333;
+            overflow: hidden;
+            border: 2px #333 solid;
+            display: none;
+            z-index: 1000;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+
+        .bounceIn{
+            -webkit-animation : bounceIn 0.5s 1 ease;
+            -moz-animation : bounceIn 0.5s 1 ease;
+            -o-animation : bounceIn 0.5s 1 ease;
+            -ms-animation : bounceIn 0.5s 1 ease;
+        }
+        @-ms-keyframes bounceIn{
+            0% {
+                width: 0px
+            }
+
+            30% {
+                width: 265px
+            }
+
+            50% {
+                width: 271px;
+            }
+
+            70% {
+                width: 265px;
+            }
+            100% {
+                width: 265px;
+            }
+        }
+        @-webkit-keyframes bounceIn{
+            0% {
+                width: 0px
+            }
+
+            30% {
+                width: 265px
+            }
+
+            50% {
+                width: 271px;
+            }
+
+            70% {
+                width: 265px;
+            }
+            100% {
+                width: 265px;
+            }
+        }
+        @-moz-keyframes bounceIn{
+            0% {
+                width: 0px
+            }
+
+            30% {
+                width: 265px
+            }
+
+            50% {
+                width: 271px;
+            }
+
+            70% {
+                width: 265px;
+            }
+            100% {
+                width: 265px;
+            }
+        }
+        @-o-keyframes bounceIn{
+            0% {
+                width: 0px
+            }
+
+            30% {
+                width: 265px
+            }
+
+            50% {
+                width: 271px;
+            }
+
+            70% {
+                width: 265px;
+            }
+            100% {
+                width: 265px;
+            }
+        }
+
+        .bounceOut{
+            -webkit-animation : bounceOut 0.3s 1 cubic-bezier(1.00, 0.00, 1.00, 1.00);
+            -moz-animation : bounceOut 0.3s 1 cubic-bezier(1.00, 0.00, 1.00, 1.00);
+            -o-animation : bounceOut 0.3s 1 cubic-bezier(1.00, 0.00, 1.00, 1.00);
+            -ms-animation : bounceOut 0.3s 1 cubic-bezier(1.00, 0.00, 1.00, 1.00);
+        }
+        @-webkit-keyframes bounceOut{
+            0% {
+                width: 265px
+            }
+            100%{
+                width: 0px;
+            }
+        }
+        @-moz-keyframes bounceOut{
+            0% {
+                width: 265px;
+            }
+            100%{
+                width: 0px;
+            }
+        }
+        @-o-keyframes bounceOut{
+            0% {
+                width: 265px;
+            }
+            100%{
+                width: 0px;
+            }
+        }
+        @-ms-keyframes bounceOut{
+            0% {
+                width: 265px;
+            }
+            100%{
+                width: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<h2>EffectSidepull的demo</h2>
+<ul class="J_KG_Item_List">
+    <li class="J_KG_Item">
+        <div class="J_KG_Item_Head">
+            <a href="#">超链接</a>
+        </div>
+        <div class="J_KG_Item_Content">
+            Content
+        </div>
+    </li>
+</ul>
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var debugPath = "http://localhost:5555/";
+        S.config({
+            packages:[
+                {
+                    name:"kg/effect-sidepull/1.0.1",
+                    path:debugPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri: true
+                }
+            ]
+        });
+    }
+
+    S.use('kg/effect-sidepull/1.0.1/index', function (S, EffectSidepull) {
+        new EffectSidepull();
+    })
+</script>
+</body>
+</html>
+

@@ -1,0 +1,1 @@
+KISSY.add("kg/effect-sidepull/1.0.1/lib/main",["node","base"],function(e,i,n,a){var d=(i("node").all,i("base"));a.exports=d.extend({initializer:function(){}},{ATTRS:{}})});
